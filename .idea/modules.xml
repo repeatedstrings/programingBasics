@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/programingBasics.iml" filepath="$PROJECT_DIR$/.idea/modules/programingBasics.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/programingBasics_main.iml" filepath="$PROJECT_DIR$/.idea/modules/programingBasics_main.iml" group="programingBasics" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/programingBasics_test.iml" filepath="$PROJECT_DIR$/.idea/modules/programingBasics_test.iml" group="programingBasics" />
+      <module fileurl="file://$PROJECT_DIR$/programingBasics.iml" filepath="$PROJECT_DIR$/programingBasics.iml" />
     </modules>
   </component>
 </project>
