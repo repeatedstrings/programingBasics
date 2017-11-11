@@ -1,6 +1,9 @@
-
+import Lessons.BuildFancyIfItem;
 import Lessons.BuildIfItem;
-import MenuBuilder.MenuBuilder;
+import Lessons.BuildItem;
+import MenuBuilder.*;
+
+import java.util.Scanner;
 
 public class ProgrammingBasics {
 
@@ -9,16 +12,19 @@ public class ProgrammingBasics {
         MenuBuilder myMenu = new MenuBuilder();
 
 //        list of learned lessons
-        BuildIfItem ifItem = new BuildIfItem();
-        myMenu.addMenuItem(ifItem.getIfEntry());
-        ifItem.runExample(true);
+
+        myMenu.addMenuItem(new BuildIfItem())
+                .addMenuItem(new BuildFancyIfItem());
 
 
+        //print out menu and then select one to show.
+        myMenu.printMenu();
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Please enter your selection: ");
+        int selected = keyboard.nextInt();
 
-//        myMenu.addMenuItem(new BuildFancyIfItem().getFancyIfEntry());
-//        int selection = mymenu.selectitemfrommenu();
-//        myMenu.printMenu();
-//        System.out.println(myMenu.toString());
+        BuildItem item = myMenu.getMenuEntry(selected);
+        item.getBuildItem().runExample(true);
 
     }
 
